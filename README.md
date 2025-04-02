@@ -28,7 +28,7 @@ PhantomRecon is a professional-grade, modular website security scanner designed 
   
 - **Reporting Engine**
   - Outputs detailed results in **Markdown**, **JSON**, and **HTML** formats.
-  - Beautified HTML includes inline styling, and Markdown is optimized for CI logs.
+  - HTML includes inline styling, and Markdown is optimized for CI logs.
 
 - **CLI & Automation Friendly**
   - Supports space/comma-separated URLs.
