@@ -1,28 +1,22 @@
 # PhantomRecon Web Security Scanner
 
--  PhantomRecon is a professional-grade, modular website security scanner designed to audit the security posture of web properties. 
--  It performs in-depth passive analysis of SSL/TLS certificates, HTTP security headers, and other security measures, generating actionable reports for website hardening.
-
-- Audits the security posture of web properties.
-- Performs in-depth passive analysis of:
-- SSL/TLS certificates.
-- HTTP security headers.
-- Other security measures.
-- Generates actionable reports for website hardening.
+PhantomRecon is a professional-grade, modular website security scanner designed to audit the security posture of web properties. It performs in-depth passive analysis of SSL/TLS certificates, HTTP security headers, and other security measures, generating actionable reports for website hardening.
 
 ## Features
 
 - **SSL/TLS Certificate Audit**
   - Fetches and validates SSL certificates via HTTPS.
   - Analyzes the Common Name (CN), issuer, validity period, TLS version, and cipher.
+  
 - **HTTP Security Headers & Cookies**
-  - Outputs detailed results in **Markdown**, **JSON**, and **HTML** formats.
-  - HTML output is formatted for readability with inline styling, and Markdown is optimized for CI logs.
+  - Checks HTTP headers for standard protections (e.g., HSTS, CSP, XFO).
+  - Scores headers, flags missing ones, and inspects cookie flags.
+  
 - **DNS & CDN Fingerprinting**
   - Detects CDN usage (e.g., Cloudflare, Akamai, Fastly).
   - Performs DNSSEC verification and extracts CAA records.
+  
 - **Reporting Engine**
-
   - Outputs detailed results in **Markdown**, **JSON**, and **HTML** formats.
   - Beautified HTML includes inline styling, and Markdown is optimized for CI logs.
 
@@ -39,7 +33,8 @@
 **Clone the repository to your local machine:**
 
 ```
-git clone [https://github.com/ifconfigme/phantom-recon.git]
+git clone https://github.com/ifconfigme/phantom-recon.git
+cd phantom-recon
 ```
 
 ## Dependencies
