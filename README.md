@@ -39,7 +39,7 @@
 **Clone the repository to your local machine:**
 
 ```
-git clone https://github.com/danielmonbrod/phantom-recon.git
+git clone [https://github.com/ifconfigme/phantom-recon.git]
 ```
 
 ## Dependencies
